@@ -107,7 +107,7 @@ export default function App() {
         </section>
 
         <footer className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/60">
-          <p>Cleiton Avi - Designer de Marcas © 2025</p>
+          <p>EST. 2012 © CLEITON AVI — STRATEGIC BRANDING. BUILD TO LAST.</p>
           <p className="mt-1">Desde 2012 ajudando marcas a serem a melhor versão de si mesmas</p>
         </footer>
       </div>
