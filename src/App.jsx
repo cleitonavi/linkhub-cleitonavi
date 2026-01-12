@@ -1,5 +1,6 @@
 import React from 'react'
-import { IconBrandWhatsapp, IconMail, IconBrandLinkedin, IconBrandDribbble, IconBrandInstagram, IconBrandBehance } from "@tabler/icons-react";
+import logo from "./assets/logo_cleitonavi.svg";
+import { IconBrandLinkedin, IconBrandDribbble, IconBrandInstagram, IconBrandBehance } from "@tabler/icons-react";
 
 export default function App() {
   const brandTurquoise = "#22D3C5";
@@ -17,60 +18,34 @@ export default function App() {
       }} />
       <div className="relative mx-auto max-w-3xl px-6 py-16 sm:py-20 lg:py-24">
         <header className="mb-12 text-center">
-          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Cleiton Avi | Designer de Marcas</h1>
-          <p className="mt-2 text-white/70 max-w-xl mx-auto">
-            Especialista em identidade visual e branding. Há mais de 12 anos ajudando marcas a serem a melhor versão de si mesmas através de design estratégico.
+          <img
+            src={logo}
+            alt="Cleiton Avi"
+            className="mx-auto w-2/4 max-w-md mb-6"
+          />
+          <p className="text-white/70 max-w-xl mx-auto">
+            Design estratégico para negócios que buscam longevidade. Transformo empresas em marcas de legado.
           </p>
         </header>
 
         <section className="mb-12">
           <div className="grid grid-cols-1 gap-4">
-            <a href="https://cleitonavi.com/" className={primaryBtn} style={primaryStyles}>
-              <div className="flex flex-col text-left">
-                <span className="text-lg">Portfólio Completo</span>
-                <span className="text-sm/5 opacity-80 font-medium">Conheça meus projetos e cases de sucesso em identidade visual</span>
-              </div>
-            </a>
             <a href="https://cleitonavi.com/orcamento/" className={primaryBtn} style={primaryStyles}>
               <div className="flex flex-col text-left">
-                <span className="text-lg">Solicitar Orçamento</span>
-                <span className="text-sm/5 opacity-80 font-medium">Vamos conversar sobre seu projeto de identidade visual</span>
+                <span className="text-lg">Iniciar um Projeto</span>
+                <span className="text-sm/5 opacity-80 font-medium">Solicite uma proposta de design de marca ou consultoria.</span>
+              </div>
+            </a>
+            <a href="https://cleitonavi.com/" className={secondaryBtn + " border-white/15 bg-white/[0.03] hover:bg-white/[0.06]"}>
+              <div className="flex flex-col text-left">
+                <span className="text-lg">Meu Trabalho</span>
+                <span className="text-sm/5 text-white/70 font-medium">Site com cases, metodologia e muito mais.</span>
               </div>
             </a>
             <a href="https://cleitonavi.com/sobre-mim/" className={secondaryBtn + " border-white/15 bg-white/[0.03] hover:bg-white/[0.06]"}>
               <div className="flex flex-col text-left">
-                <span className="text-lg">Sobre Mim</span>
-                <span className="text-sm/5 text-white/70 font-medium">Conheça minha trajetória e experiência em design</span>
-              </div>
-            </a>
-            <a href="https://cleitonavi.com/servicos/" className={secondaryBtn + " border-white/15 bg-white/[0.03] hover:bg-white/[0.06]"}>
-              <div className="flex flex-col text-left">
-                <span className="text-lg">Serviços</span>
-                <span className="text-sm/5 text-white/70 font-medium">Identidade visual e consultoria em branding</span>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="mb-4 text-xl font-semibold tracking-tight">Contato</h2>
-          <div className="grid grid-cols-1 gap-3">
-            <a href="https://wa.me/5547989077672" target="_blank" rel="noopener noreferrer" className={secondaryBtn + " border-white/15 bg-white/[0.03] hover:bg-white/[0.06]"}>
-              <div className="flex items-center justify-between w-full">
-                <div className="flex flex-col text-left">
-                  <span className="text-lg">WhatsApp</span>
-                  <span className="text-sm/5 text-white/70 font-medium">Vamos conversar sobre seu projeto</span>
-                </div>
-                <IconBrandWhatsapp size={24} color={brandTurquoise} />
-              </div>
-            </a>
-            <a href="mailto:contato@cleitonavi.com" className={secondaryBtn + " border-white/15 bg-white/[0.03] hover:bg-white/[0.06]"}>
-              <div className="flex items-center justify-between w-full">
-                <div className="flex flex-col text-left">
-                  <span className="text-lg">E-mail para Contato</span>
-                  <span className="text-sm/5 text-white/70 font-medium">contato@cleitonavi.com</span>
-                </div>
-                <IconMail size={24} color={brandTurquoise} />
+                <span className="text-lg">Quem é Cleiton Avi</span>
+                <span className="text-sm/5 text-white/70 font-medium">Minha trajetória e filosofia de design.</span>
               </div>
             </a>
           </div>
@@ -108,7 +83,6 @@ export default function App() {
 
         <footer className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/60">
           <p>EST. 2012 © CLEITON AVI — STRATEGIC BRANDING. BUILD TO LAST.</p>
-          <p className="mt-1">Desde 2012 ajudando marcas a serem a melhor versão de si mesmas</p>
         </footer>
       </div>
     </main>
