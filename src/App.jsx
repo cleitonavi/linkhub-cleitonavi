@@ -118,7 +118,7 @@ export default function App() {
         </section>
 
         <footer className="mt-16 text-center animate-fade-up opacity-0" style={{ animationDelay: '900ms' }}>
-          <p className="text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase whitespace-nowrap">
+          <p className="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase">
             Est. 2012 · Cleiton Avi · Strategic Branding · Build to Last
           </p>
         </footer>
