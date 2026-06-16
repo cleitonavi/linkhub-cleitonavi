@@ -81,8 +81,8 @@ export default function App() {
 
         <section className="flex flex-col gap-3">
           <LinkButton 
-            title="Iniciar um Projeto" 
-            subtitle="Solicite uma proposta" 
+            title="Vamos conversar" 
+            subtitle="Me conta um pouco sobre o seu projeto." 
             href="https://cleitonavi.com/orcamento/" 
             isPrimary 
             delay="100ms"
@@ -119,7 +119,7 @@ export default function App() {
 
         <footer className="mt-16 text-center animate-fade-up opacity-0" style={{ animationDelay: '900ms' }}>
           <p className="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase">
-            Est. 2012 · Cleiton Avi · Strategic Branding · Build to Last
+            Est. 2012 · Cleiton Avi · Brand Designer · Build to Last
           </p>
         </footer>
       </div>
