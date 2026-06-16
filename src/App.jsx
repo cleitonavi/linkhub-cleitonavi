@@ -75,7 +75,7 @@ export default function App() {
             className="mb-6 w-[70%] h-auto filter brightness-110"
           />
           <p className="text-sm font-medium leading-relaxed text-white/60 tracking-[0.02em]">
-            Identidade visual e estratégia para líderes que constroem legado.
+            Design de marcas inconfundíveis, feitas para durar.
           </p>
         </header>
 
