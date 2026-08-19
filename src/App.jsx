@@ -73,7 +73,7 @@ export default function App() {
             className="mb-6 w-[70%] h-auto filter brightness-110"
           />
           <p className="text-sm font-medium leading-relaxed text-white/60 tracking-[0.02em]">
-            Estratégia e identidade visual para marcas novas e projetos de redesign.
+            Estratégia e identidade visual <br /> para marcas novas e projetos de redesign.
           </p>
         </header>
 
@@ -120,7 +120,7 @@ export default function App() {
         </section>
 
         <footer className="mt-16 text-center animate-fade-up opacity-0" style={{ animationDelay: '700ms' }}>
-          <p className="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase">
+          <p className="text-[7.5px] sm:text-[9px] font-bold tracking-[0.15em] text-white/30 uppercase">
             CLEITON AVI · DESIGNER DE MARCAS · RIO DO SUL, SC · DESDE 2012
           </p>
         </footer>
