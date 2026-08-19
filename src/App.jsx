@@ -2,9 +2,7 @@ import React from 'react'
 import logo from "./assets/logo_cleitonavi.svg";
 import { 
   IconBrandLinkedin, 
-  IconBrandDribbble, 
   IconBrandInstagram, 
-  IconBrandBehance,
   IconArrowUpRight
 } from "@tabler/icons-react";
 
@@ -75,34 +73,40 @@ export default function App() {
             className="mb-6 w-[70%] h-auto filter brightness-110"
           />
           <p className="text-sm font-medium leading-relaxed text-white/60 tracking-[0.02em]">
-            Design de marcas inconfundíveis, feitas para durar.
+            Estratégia e identidade visual para marcas novas e projetos de redesign.
           </p>
         </header>
 
         <section className="flex flex-col gap-3">
           <LinkButton 
-            title="Vamos conversar" 
-            subtitle="Me conta um pouco sobre o seu projeto." 
-            href="https://cleitonavi.com/orcamento/" 
+            title="Chamar no WhatsApp" 
+            subtitle="Fale comigo sobre o seu projeto." 
+            href="https://wa.me/5547989077672?text=Olá,%20Cleiton.%20Quero%20falar%20sobre%20um%20projeto%20de%20marca." 
             isPrimary 
             delay="100ms"
           />
           <LinkButton 
-            title="Meu Trabalho" 
-            subtitle="Cases, processo e metodologia" 
+            title="Portfólio e Serviços" 
+            subtitle="Projetos, processo e escopos de trabalho." 
             href="https://cleitonavi.com/" 
             delay="200ms"
           />
           <LinkButton 
-            title="Quem é Cleiton Avi" 
-            subtitle="Trajetória e forma de trabalhar" 
+            title="Sobre Cleiton Avi" 
+            subtitle="Trajetória, método e visão de trabalho." 
             href="https://cleitonavi.com/sobre-mim/" 
             delay="300ms"
+          />
+          <LinkButton 
+            title="Enviar briefing" 
+            subtitle="Prefere escrever? Use o formulário." 
+            href="https://cleitonavi.com/orcamento/" 
+            delay="400ms"
           />
         </section>
 
         {/* Separator */}
-        <div className="my-10 flex items-center justify-center gap-4 animate-fade-up opacity-0" style={{ animationDelay: '400ms' }}>
+        <div className="my-10 flex items-center justify-center gap-4 animate-fade-up opacity-0" style={{ animationDelay: '500ms' }}>
           <div className="h-px flex-1 bg-white/10" />
           <div className="h-1 w-1 rounded-full bg-brand-teal" />
           <div className="h-px flex-1 bg-white/10" />
@@ -110,16 +114,14 @@ export default function App() {
 
         <section>
           <div className="grid grid-cols-2 gap-3">
-            <SocialButton icon={IconBrandLinkedin} name="LinkedIn" href="https://www.linkedin.com/in/cleiton-avi/" delay="500ms" />
+            <SocialButton icon={IconBrandLinkedin} name="LinkedIn" href="https://www.linkedin.com/in/cleiton-avi/" delay="600ms" />
             <SocialButton icon={IconBrandInstagram} name="Instagram" href="https://www.instagram.com/cleitonavi.design/" delay="600ms" />
-            <SocialButton icon={IconBrandBehance} name="Behance" href="https://www.behance.net/cleiton" delay="700ms" />
-            <SocialButton icon={IconBrandDribbble} name="Dribbble" href="https://dribbble.com/cleitonavi" delay="800ms" />
           </div>
         </section>
 
-        <footer className="mt-16 text-center animate-fade-up opacity-0" style={{ animationDelay: '900ms' }}>
+        <footer className="mt-16 text-center animate-fade-up opacity-0" style={{ animationDelay: '700ms' }}>
           <p className="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] text-white/30 uppercase">
-            Est. 2012 · Cleiton Avi · Brand Designer · Build to Last
+            CLEITON AVI · DESIGNER DE MARCAS · RIO DO SUL, SC · DESDE 2012
           </p>
         </footer>
       </div>
