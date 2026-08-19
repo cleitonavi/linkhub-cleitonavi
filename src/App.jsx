@@ -11,6 +11,8 @@ const LinkButton = ({ title, subtitle, href, isPrimary = false, delay = "0ms" })
     <div className="animate-fade-up opacity-0" style={{ animationDelay: delay }}>
       <a 
         href={href} 
+        target="_blank"
+        rel="noopener noreferrer"
         className={`
           group relative flex items-center justify-between gap-4 rounded-8 p-4 transition-all duration-300
           border-0.5 overflow-hidden
@@ -81,7 +83,7 @@ export default function App() {
           <LinkButton 
             title="Chamar no WhatsApp" 
             subtitle="Fale comigo sobre o seu projeto." 
-            href="https://wa.me/5547989077672?text=Olá,%20Cleiton.%20Quero%20falar%20sobre%20um%20projeto%20de%20marca." 
+            href="https://api.whatsapp.com/send?phone=5547989077672&text=Ol%C3%A1%2C%20Cleiton.%20Quero%20falar%20sobre%20um%20projeto%20de%20marca." 
             isPrimary 
             delay="100ms"
           />
