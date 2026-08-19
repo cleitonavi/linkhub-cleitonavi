@@ -22,6 +22,13 @@ const LinkButton = ({ title, subtitle, href, isPrimary = false, delay = "0ms" })
         });
       }
     }
+    if (window.gtag) {
+      window.gtag('event', 'click_link', {
+        link_title: title,
+        link_url: href,
+        is_primary: isPrimary
+      });
+    }
   };
 
   return (
@@ -65,6 +72,12 @@ const SocialButton = ({ icon: Icon, name, href, delay = "0ms" }) => {
   const handleClick = () => {
     if (window.fbq) {
       window.fbq('trackCustom', 'ClickSocial', {
+        social_name: name,
+        social_url: href
+      });
+    }
+    if (window.gtag) {
+      window.gtag('event', 'click_social', {
         social_name: name,
         social_url: href
       });
