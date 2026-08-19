@@ -7,12 +7,30 @@ import {
 } from "@tabler/icons-react";
 
 const LinkButton = ({ title, subtitle, href, isPrimary = false, delay = "0ms" }) => {
+  const handleClick = () => {
+    if (window.fbq) {
+      if (title === "Chamar no WhatsApp") {
+        window.fbq('track', 'Lead', {
+          content_name: title,
+          content_category: 'Contact',
+          destination: href
+        });
+      } else {
+        window.fbq('trackCustom', 'ClickLink', {
+          link_title: title,
+          link_url: href
+        });
+      }
+    }
+  };
+
   return (
     <div className="animate-fade-up opacity-0" style={{ animationDelay: delay }}>
       <a 
         href={href} 
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleClick}
         className={`
           group relative flex items-center justify-between gap-4 rounded-8 p-4 transition-all duration-300
           border-0.5 overflow-hidden
@@ -43,20 +61,32 @@ const LinkButton = ({ title, subtitle, href, isPrimary = false, delay = "0ms" })
   );
 };
 
-const SocialButton = ({ icon: Icon, name, href, delay = "0ms" }) => (
-  <div className="animate-fade-up opacity-0" style={{ animationDelay: delay }}>
-    <a 
-      href={href} 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className="group relative flex items-center gap-3 rounded-8 border-0.5 border-white/10 bg-white/[0.02] p-3 transition-all duration-300 hover:-translate-y-[1px] hover:border-brand-teal/40 hover:bg-white/[0.04] overflow-hidden"
-    >
-      <Icon size={20} className="text-white/60 transition-colors group-hover:text-brand-teal" />
-      <span className="text-sm font-medium text-white/80">{name}</span>
-      <div className="shimmer-effect -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-    </a>
-  </div>
-);
+const SocialButton = ({ icon: Icon, name, href, delay = "0ms" }) => {
+  const handleClick = () => {
+    if (window.fbq) {
+      window.fbq('trackCustom', 'ClickSocial', {
+        social_name: name,
+        social_url: href
+      });
+    }
+  };
+
+  return (
+    <div className="animate-fade-up opacity-0" style={{ animationDelay: delay }}>
+      <a 
+        href={href} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        onClick={handleClick}
+        className="group relative flex items-center gap-3 rounded-8 border-0.5 border-white/10 bg-white/[0.02] p-3 transition-all duration-300 hover:-translate-y-[1px] hover:border-brand-teal/40 hover:bg-white/[0.04] overflow-hidden"
+      >
+        <Icon size={20} className="text-white/60 transition-colors group-hover:text-brand-teal" />
+        <span className="text-sm font-medium text-white/80">{name}</span>
+        <div className="shimmer-effect -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+      </a>
+    </div>
+  );
+};
 
 export default function App() {
   return (
